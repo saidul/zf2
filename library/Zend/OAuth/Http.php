@@ -175,7 +175,7 @@ class Http
         }
         if ($response !== null) {
             $body   = $response->getBody();
-            $status = $response->getStatus();
+            $status = $response->getStatusCode();
         }
         if ($response === null // Request failure/exception
             || $status == 500  // Internal Server Error
